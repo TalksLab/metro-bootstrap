@@ -1,0 +1,65 @@
+// BUTTON GROUPS
+// -------------
+
+
+
+// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
+.btn-group > .btn:first-child {
+  margin-left: 0;
+     -webkit-border-top-left-radius: 0px;
+         -moz-border-radius-topleft: 0px;
+             border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+      -moz-border-radius-bottomleft: 0px;
+          border-bottom-left-radius: 0px;
+}
+// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+     -webkit-border-top-right-radius: 0px;
+         -moz-border-radius-topright: 0px;
+             border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+      -moz-border-radius-bottomright: 0px;
+          border-bottom-right-radius: 0px;
+}
+// Reset corners for large buttons
+.btn-group > .btn.large:first-child {
+  
+     -webkit-border-top-left-radius: 0px;
+         -moz-border-radius-topleft: 0px;
+             border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+      -moz-border-radius-bottomleft: 0px;
+          border-bottom-left-radius: 0px;
+}
+.btn-group > .btn.large:last-child,
+.btn-group > .large.dropdown-toggle {
+     -webkit-border-top-right-radius: 0px;
+         -moz-border-radius-topright: 0px;
+             border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+      -moz-border-radius-bottomright: 0px;
+          border-bottom-right-radius: 0px;
+}
+
+
+// Split button dropdowns
+// ----------------------
+
+// Give the line between buttons some depth
+.btn-group > .dropdown-toggle {
+  .box-shadow(none);
+}
+
+.btn-group.open {
+
+  // The clickable button for toggling the menu
+  // Remove the gradient and set the same inset shadow as the :active state
+  .dropdown-toggle {
+    .box-shadow(none);
+  }
+
+}
+
+

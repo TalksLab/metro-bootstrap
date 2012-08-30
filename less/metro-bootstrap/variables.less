@@ -1,0 +1,97 @@
+
+
+// Accent colors
+// -------------------------
+@blue:                  #2E8BCC;
+@green:                 #339933;
+@red:                   #E51400;
+@yellow:                #ffc40d;
+@orange:                #F09609;
+@pink:                  #E671B8;
+@purple:                #7B4F9D;
+
+@lime:                  #8CBF26;
+@magenta: 			    #FF0097;
+@teal: 				    #00ABA9;
+
+// Links
+// -------------------------
+@linkColor:             @blue;
+@linkColorHover:        darken(@linkColor, 15%);
+
+
+// Typography
+// -------------------------
+@sansFontFamily:        "Segoe UI", "Segoe WP", "Helvetica Neue", sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+
+@baseFontSize:          14px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        25px;
+@altFontFamily:         @serifFontFamily;
+
+@headingsFontFamily:    "Segoe UI Light", "Helvetica Neue", "Segoe UI", "Segoe WP", sans-serif;
+@headingsFontWeight:    100;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+
+// Tiles
+// -----------------------
+@tileWidth:            130px;
+
+
+// Navbar
+// -------------------------
+@navbarBackground:                @white;
+@navbarBackgroundHighlight:       @white;
+
+@navbarText:                      @gray;
+@navbarLinkColor:                 @gray;
+@navbarLinkColorHover:            @gray;
+@navbarLinkColorActive:           @gray;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    @grayLight;
+@navbarBrandColor:                @navbarLinkColor;
+
+@navbarSearchBorderBottom:          @teal;
+
+
+
+// Buttons
+// -------------------------
+@btnBackground:                     @grayLighter;
+@btnBackgroundHighlight:            @grayLighter;
+@btnBorder:                         #ccc;
+
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputBorderRadius:             0px;
+@inputDisabledBackground:       @grayLighter;
+@formActionsBackground:         #f5f5f5;

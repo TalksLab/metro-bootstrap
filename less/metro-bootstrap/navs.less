@@ -1,0 +1,97 @@
+// NAVIGATIONS
+// -----------
+
+
+
+// BASE CLASS
+// ----------
+
+
+// Make links block level
+.nav > li > a {
+  display: block;
+  color: @teal;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: @grayLighter;
+}
+
+
+
+
+
+// TABS AND PILLS
+// -------------
+
+
+
+// TABS
+// ----
+
+
+// Actual tabs (as links)
+.nav-tabs > li > a {
+  
+  .border-radius(0);
+}
+
+// PILLS
+// -----
+
+// Links rendered as pills
+.nav-pills > li > a {
+  .border-radius(0px);
+}
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: @white;
+  background-color: @teal;
+}
+
+
+
+
+
+// STACKED NAV
+// -----------
+
+
+.nav-tabs.nav-stacked > li:first-child > a {
+  .border-radius(0);
+}
+.nav-tabs.nav-stacked > li:last-child > a {
+  .border-radius(0);
+}
+
+
+
+// TABBABLE
+// --------
+
+
+// COMMON STYLES
+// -------------
+
+
+
+// BOTTOM
+// ------
+
+.tabs-below > .nav-tabs > li > a {
+  .border-radius(0);
+  
+}
+
+// LEFT & RIGHT
+// ------------
+
+.tabs-left > .nav-tabs > li > a {
+  .border-radius(0);
+}
+
+.tabs-right > .nav-tabs > li > a {
+  .border-radius(0);
+}
