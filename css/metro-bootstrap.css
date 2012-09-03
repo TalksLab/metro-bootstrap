@@ -6083,6 +6083,17 @@ textarea:focus {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
+.input-append .btn {
+  height: 36px;
+  padding: 6px 10px;
+  vertical-align: top;
+}
+.controls select {
+  height: 36px;
+}
+.controls select[multiple="multiple"] {
+  height: auto;
+}
 .bs-icon {
   float: left;
   margin: 25px 10px 0 0;
