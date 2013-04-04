@@ -6494,6 +6494,7 @@ a.thumbnail:hover {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  border: 0px ;
 }
 input:focus,
 textarea:focus {
