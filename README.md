@@ -2,14 +2,9 @@ metro-bootstrap
 ===============
 
 Simple bootstrap from Twitter with Metro style.
-[TalksLab](http://talkslab.com) production by [Guilherme Ferreira](http://twitter.com/gsferreira), [Nelson Reis](http://twitter.com/nelsonreis) and [Rui Neves](http://twitter.com/ruimlneves).
+TalksLab production by [Guilherme Ferreira](http://twitter.com/gsferreira) (http://gsferreira.com), [Nelson Reis](http://twitter.com/nelsonreis) (http://nelsonreis.info/) and [Rui Neves](http://twitter.com/ruimlneves).
 
 
-
-Blog
-----
-
-Read more @ [TalksLab Blog](http://talkslab.com/blog).
 
 
 Demo
