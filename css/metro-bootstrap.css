@@ -6269,9 +6269,9 @@ pre {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  box-shadow: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .dropup .dropdown-submenu > .dropdown-menu {
   -webkit-border-radius: 0px 0px 0px 0;
