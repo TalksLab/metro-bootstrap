@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link rel="stylesheet" type="text/css" href="css/metro-bootstrap.css">
-
+    <link rel="stylesheet" href="docs/font-awesome.css">
 
     <style>
         body
@@ -224,8 +224,41 @@
     </div>
     <div class="span4">
       <h3>Checkbox and radio flavors</h3>
-      <p>Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View <a href="./javascript.html#buttons">the Javascript docs</a> for that.</p>
-      <p><a class="btn js-btn" href="./javascript.html#buttons">Get the javascript &raquo;</a></p>
+	  <p>This requires a version of Font Awesome. View <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome Github page</a> for that.</p>
+	  <p>
+		  <div class="control-group">
+			<label class="control checkbox">
+			  <input type="checkbox">
+				<span class="checkbox-label"> CheckBox</span>
+			</label>
+			</div>
+<pre class="prettyprint linenums">
+&lt;label class="control checkbox"&gt;
+   &lt;input type="checkbox"&gt;
+   &lt;span class="checkbox-label"&gt; CheckBox&lt;/span&gt;
+&lt;/label&gt;
+</pre>
+			<div class="control-group">
+			<label class="control radio">
+        <input type="radio" name="radio">
+        <span class="radio-label"> Radio</span>
+    </label>
+	<label class="control radio">
+        <input type="radio" name="radio">
+        <span class="radio-label" > Radio</span>
+    </label>
+		  </div>
+		  <pre class="prettyprint linenums">
+&lt;label class="control radio"&gt;
+  &lt;input type="radio" name="radio"&gt;
+  &lt;span class="radio-label"&gt; Radio&lt;/span&gt;
+&lt;/label&gt;
+</pre>
+		  
+		  
+	  </p>
+      
+      
       <h3>Dropdowns in button groups</h3>
       <p><span class="label label-info">Heads up!</span> Buttons with dropdowns must be individually wrapped in their own <code>.btn-group</code> within a <code>.btn-toolbar</code> for proper rendering.</p>
     </div>
