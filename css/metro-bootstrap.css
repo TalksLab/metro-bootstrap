@@ -1,4 +1,3 @@
-/* move down carets for tabs */
 /*!
  * metro-bootstrap v2.2.3
  *
@@ -679,8 +678,8 @@ ol.inline {
   margin-left: 0;
   list-style: none;
 }
-ul.inline  > li,
-ol.inline  > li {
+ul.inline > li,
+ol.inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
@@ -2452,7 +2451,7 @@ table th[class*="span"],
 .open {
   *z-index: 1000;
 }
-.open  > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
@@ -6138,7 +6137,14 @@ li {
 .thumbnails > li.tile h2.tile-text,
 .thumbnails > li.tile h3.tile-text,
 .thumbnails > li.tile h4.tile-text {
-  margin-top: 43.333333333333336px;
+  height: 86.66666666666666px;
+  margin: 0;
+  padding: 43.333333333333336px 0 0 0;
+}
+.thumbnails > li.tile a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .thumbnails > li.tile a:hover {
   text-decoration: none;
@@ -6546,7 +6552,7 @@ textarea:focus {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.control.checkbox  > input[type=checkbox] {
+.control.checkbox > input[type=checkbox] {
   position: absolute;
   opacity: 0;
 }
@@ -6588,7 +6594,7 @@ textarea:focus {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.control.radio  > input[type=radio] {
+.control.radio > input[type=radio] {
   position: absolute;
   opacity: 0;
 }
