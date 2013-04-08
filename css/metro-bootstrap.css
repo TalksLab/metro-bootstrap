@@ -6572,7 +6572,7 @@ textarea:focus {
   display: block;
   content: "\f00c";
   font-size: 10pt;
-  heigth: 14px;
+  height: 14px;
   width: 14px;
   line-height: 14px;
   z-index: 2;
