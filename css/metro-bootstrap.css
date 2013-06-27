@@ -6627,3 +6627,12 @@ textarea:focus {
   height: 10px;
   border-radius: 100%;
 }
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
