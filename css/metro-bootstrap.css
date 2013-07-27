@@ -6551,7 +6551,7 @@ textarea:focus {
   opacity: 0;
 }
 .control.checkbox .checkbox-label {
-  padding-left: 23px;
+  padding-left: 28px;
   position: relative;
 }
 .control.checkbox .checkbox-label:before {
@@ -6593,7 +6593,7 @@ textarea:focus {
   opacity: 0;
 }
 .control.radio .radio-label {
-  padding-left: 23px;
+  padding-left: 28px;
   position: relative;
 }
 .control.radio .radio-label:before {
