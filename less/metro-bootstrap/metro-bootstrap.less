@@ -4,91 +4,58 @@
  * from talkslab based on twitter bootstrap.
  */
 
-// CSS Reset
-@import "../reset.less";
 
 // Core variables and mixins
-@import "../variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../variables.less";
 @import "variables.less"; 
 @import "../mixins.less";
 
-// Grid system and page structure
-@import "../scaffolding.less";
-@import "../grid.less";
-@import "../layouts.less";
+// Reset
+@import "../normalize.less";
+@import "../print.less";
 
-// Base CSS
+// Core CSS
+@import "../scaffolding.less";
 @import "../type.less";
 @import "../code.less";
-@import "../forms.less";
+@import "../grid.less";
 @import "../tables.less";
-
-// Components: common
-@import "../sprites.less";
-@import "../dropdowns.less";
-@import "../wells.less";
-@import "../component-animations.less";
-@import "../close.less";
-
-// Components: Buttons & Alerts
+@import "../forms.less";
 @import "../buttons.less";
-@import "../button-groups.less";
-@import "../alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
-// Components: Nav
+// Components
+@import "../component-animations.less";
+@import "../glyphicons.less";
+@import "../dropdowns.less";
+@import "../button-groups.less";
+@import "../input-groups.less";
 @import "../navs.less";
 @import "../navbar.less";
 @import "../breadcrumbs.less";
 @import "../pagination.less";
 @import "../pager.less";
+@import "../labels.less";
+@import "../badges.less";
+@import "../jumbotron.less";
+@import "../thumbnails.less";
+@import "../alerts.less";
+@import "../progress-bars.less";
+@import "../media.less";
+@import "../list-group.less";
+@import "../panels.less";
+@import "../wells.less";
+@import "../close.less";
 
-// Components: Popovers
+// Components w/ JavaScript
 @import "../modals.less";
 @import "../tooltip.less";
 @import "../popovers.less";
-
-// Components: Misc
-@import "../thumbnails.less";
-@import "../labels-badges.less";
-@import "../progress-bars.less";
-@import "../accordion.less";
 @import "../carousel.less";
-@import "../hero-unit.less";
 
 // Utility classes
-@import "../utilities.less"; // Has to be last to override when necessary
-
-
-
-
-/*
- * Responsive
- */
-
-// RESPONSIVE CLASSES
-// ------------------
-
+@import "../utilities.less";
 @import "../responsive-utilities.less";
 
-
-// MEDIA QUERIES
-// ------------------
-
-// Phones to portrait tablets and narrow desktops
-@import "../responsive-767px-max.less";
-
-// Tablets to regular desktops
-@import "../responsive-768px-979px.less";
-
-// Large desktops
-@import "../responsive-1200px-min.less";
-
-
-// RESPONSIVE NAVBAR
-// ------------------
-
-// From 979px and below, show a button to toggle navbar contents
-@import "../responsive-navbar.less";
 
 
 
@@ -98,24 +65,8 @@
  */
 
 
-@import "type.less";
 @import "tiles.less";
-@import "navbar.less";
-@import "buttons.less";
-@import "code.less";
-@import "dropdowns.less";
-@import "wells.less";
-@import "navs.less";
-@import "hero-unit.less";
-@import "labels-badges.less";
-@import "button-groups.less";
-@import "thumbnails.less";
-@import "pagination.less";
-@import "breadcrumbs.less";
 @import "alerts.less";
-@import "forms.less";
-@import "icons.less";
-@import "pager.less";
-@import "progress-bars.less";
 @import "checkbox.less";
 @import "radio.less";
+@import "labels.less";
