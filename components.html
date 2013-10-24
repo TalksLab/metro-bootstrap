@@ -22,6 +22,122 @@
 margin-bottom: 19px;
 	min-height:124px;
 }
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f5f5f5;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+  
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #2e8bcc;
+  background-color: transparent;
+  border-right: 1px solid #2e8bcc;
+}
+
+
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 263px;
+  }
+}
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+
+.bs-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-links {
+  margin: 10px 0;
+  padding-left: 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .bs-footer {
+    text-align: left;
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
 
     </style>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -47,11 +163,12 @@ margin-bottom: 19px;
       </div>
     </div>
   
-    <div class="container ">
+    <div class="container bs-docs-container">
       <div class="row">
         <div class="col-md-3">
-            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
-              
+
+              <div class="bs-sidebar hidden-print affix-top" role="complementary">
+            <ul class="nav bs-sidenav">
                 <li>
   <a href="#tiles">Tiles</a>
 </li>
@@ -108,9 +225,10 @@ margin-bottom: 19px;
               
             </ul>
         </div>
+		</div>
         <div class="col-md-9" role="main">
 
-		  <!-- Tiles
+<!-- 		  <!-- Tiles
   ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
@@ -2546,27 +2664,23 @@ margin-bottom: 19px;
     </div>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;well well-sm&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 </code></pre></div>
-  </div>
+  </div> -->
 
         </div>
       </div>
-
+</div>
     
 
      <!-- Footer
       ================================================== -->
 
-	  <br />
-	  <br />
-	  </div>
-	  <hr>
-	  <div class="container ">
-        <footer class="footer">
-        
-        <p>A <a href="http://twitter.com/talkslab" target="_blank">talkslab</a> production by <a href="http://twitter.com/gsferreira" target="_blank">gsferreira</a>, <a href="http://twitter.com/nelsonreis" target="_blank">nelsonreis</a> and <a href="http://twitter.com/ruimlneves" target="_blank">ruimlneves</a>.</p>
-      </footer>
 
-</div>
+	  <footer class="bs-footer" role="contentinfo">
+      <div class="container">
+         <p>A <a href="http://twitter.com/talkslab" target="_blank">talkslab</a> production by <a href="http://twitter.com/gsferreira" target="_blank">gsferreira</a>, <a href="http://twitter.com/nelsonreis" target="_blank">nelsonreis</a> and <a href="http://twitter.com/ruimlneves" target="_blank">ruimlneves</a>.</p>
+      </div>
+    </footer>
+
 
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
@@ -2574,6 +2688,7 @@ margin-bottom: 19px;
 <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="docs/jquery-1.8.0.js"></script>
 <script type="text/javascript" src="docs/bootstrap.js"></script>
+<script type="text/javascript" src="docs/application.js"></script>
 <script type="text/javascript" src="docs/jquery.validate.js"></script>
 <script type="text/javascript" src="docs/jquery.validate.unobtrusive.js"></script>
 <script type="text/javascript" src="docs/jquery.unobtrusive-ajax.js"></script>
