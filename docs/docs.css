@@ -136,3 +136,70 @@ body {
     margin-bottom: 0;
   }
 }
+
+/*
+ * Banner Ads
+ *
+ * Styles for displaying the banner ads
+ */
+.bannerad {
+  display:block; 
+  background: #2777ad; 
+  border: 0; 
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.075);
+  font-size: 13px; 
+  height: 115px; 
+  line-height: 16px;
+  margin-top: 4px; 
+  overflow: hidden; 
+  text-align: left;
+  width: 300px;
+}
+.bannerad-img {
+  border: none; 
+  display: inline; 
+  float: left; 
+  height: 100px; 
+  margin: 9px; 
+  margin: 7px 9px 9px 9px;
+  width: 130px;
+}
+.bannerad-text {
+  display: block; 
+  float: none; 
+  margin-left: 145px;
+  padding-top: 11px;
+  width: 142px; 
+}
+.bannerad-text a {
+  color: #fff;
+  font-weight: bold; 
+  text-decoration: none;
+}
+.bannerad-text a small {
+  font-weight: normal; 
+}
+.bannerad-tag {
+  color: #cdbfe3;
+  display: block; 
+  float: none; 
+  margin-left: 145px;
+  margin-top: 9px; 
+  text-align: left; 
+  width: 142px; 
+  color: #999999;
+}
+.bannerad-tag a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .bannerad {
+    border-radius: 4px;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.075), 0 1px 0 rgba(255,255,255,.1);
+  }
+}
+@media screen and (min-width: 992px) {
+  .bannerad {
+  }
+}
