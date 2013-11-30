@@ -141,7 +141,7 @@ ol {
   margin-top: 0;
   margin-bottom: (@line-height-computed / 2);
   ul,
-  ol{
+  ol {
     margin-bottom: 0;
   }
 }
@@ -153,13 +153,19 @@ ol {
   padding-left: 0;
   list-style: none;
 }
+
 // Inline turns list items into inline-block
 .list-inline {
   .list-unstyled();
+
   > li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 }
 
@@ -204,7 +210,7 @@ dd {
 
 // Abbreviations and acronyms
 abbr[title],
-// Added data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted @abbr-border-color;
@@ -227,12 +233,13 @@ blockquote {
   p:last-child {
     margin-bottom: 0;
   }
-  small {
+  small,
+  .small {
     display: block;
     line-height: @line-height-base;
     color: @blockquote-small-color;
     &:before {
-      content: '\2014 \00A0';// EM DASH, NBSP
+      content: '\2014 \00A0'; // EM DASH, NBSP
     }
   }
 
@@ -253,7 +260,7 @@ blockquote {
         content: '';
       }
       &:after {
-        content: '\00A0 \2014';// NBSP, EM DASH
+        content: '\00A0 \2014'; // NBSP, EM DASH
       }
     }
   }

@@ -10,7 +10,6 @@
 
 .navbar {
   position: relative;
-  z-index: @zindex-navbar;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
@@ -75,7 +74,7 @@
     }
 
     &.in {
-      overflow-y: visible;
+      overflow-y: auto;
     }
 
     // Account for first and last children spacing
@@ -111,12 +110,14 @@
 //
 // Navbar alignment options
 //
-// Display the navbar across the entirity of the page or fixed it to the top or
+// Display the navbar across the entirety of the page or fixed it to the top or
 // bottom of the page.
 
 // Static top (unfixed, but 100% wide) navbar
 .navbar-static-top {
+  z-index: @zindex-navbar;
   border-width: 0 0 1px;
+
   @media (min-width: @grid-float-breakpoint) {
     border-radius: 0;
   }
@@ -128,7 +129,7 @@
   position: fixed;
   right: 0;
   left: 0;
-  border-width: 0 0 1px;
+  z-index: @zindex-navbar-fixed;
 
   // Undo the rounded corners
   @media (min-width: @grid-float-breakpoint) {
@@ -136,12 +137,13 @@
   }
 }
 .navbar-fixed-top {
-  z-index: @zindex-navbar-fixed;
   top: 0;
+  border-width: 0 0 1px;
 }
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0; // override .navbar defaults
+  border-width: 1px 0 0;
 }
 
 
@@ -152,6 +154,7 @@
   padding: @navbar-padding-vertical @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -177,6 +180,7 @@
   padding: 9px 10px;
   .navbar-vertical-align(34px);
   background-color: transparent;
+  background-image: none; // Fix for at least Firefox on Android, per #11468
   border: 1px solid transparent;
   border-radius: @border-radius-base;
 
@@ -254,7 +258,7 @@
 
 // Component alignment
 //
-// Repurpose the pull utilities as their own navbar utilities to avoid specifity
+// Repurpose the pull utilities as their own navbar utilities to avoid specificity
 // issues with parents and chaining. Only do this when the navbar is uncollapsed
 // though so that navbar contents properly stack and align in mobile.
 
@@ -337,10 +341,10 @@
 // Add a class to make any element properly align itself vertically within the navbars.
 
 .navbar-text {
-  float: left;
   .navbar-vertical-align(@line-height-computed);
 
   @media (min-width: @grid-float-breakpoint) {
+    float: left;
     margin-left: @navbar-padding-horizontal;
     margin-right: @navbar-padding-horizontal;
   }
@@ -411,15 +415,8 @@
     border-color: @navbar-default-border;
   }
 
-  // Dropdown menu items and carets
+  // Dropdown menu items
   .navbar-nav {
-    // Caret should match text color on hover
-    > .dropdown > a:hover .caret,
-    > .dropdown > a:focus .caret {
-      border-top-color: @navbar-default-link-hover-color;
-      border-bottom-color: @navbar-default-link-hover-color;
-    }
-
     // Remove background color from open dropdown
     > .open > a {
       &,
@@ -427,17 +424,8 @@
       &:focus {
         background-color: @navbar-default-link-active-bg;
         color: @navbar-default-link-active-color;
-        .caret {
-          border-top-color: @navbar-default-link-active-color;
-          border-bottom-color: @navbar-default-link-active-color;
-        }
       }
     }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-default-link-color;
-      border-bottom-color: @navbar-default-link-color;
-    }
-
 
     @media (max-width: @screen-xs-max) {
       // Dropdowns get custom display when collapsed
@@ -558,30 +546,15 @@
         color: @navbar-inverse-link-active-color;
       }
     }
-    > .dropdown > a:hover .caret {
-      border-top-color: @navbar-inverse-link-hover-color;
-      border-bottom-color: @navbar-inverse-link-hover-color;
-    }
-    > .dropdown > a .caret {
-      border-top-color: @navbar-inverse-link-color;
-      border-bottom-color: @navbar-inverse-link-color;
-    }
-    > .open > a {
-      &,
-      &:hover,
-      &:focus {
-        .caret {
-          border-top-color: @navbar-inverse-link-active-color;
-          border-bottom-color: @navbar-inverse-link-active-color;
-        }
-      }
-    }
 
     @media (max-width: @screen-xs-max) {
       // Dropdowns get custom display
       .open .dropdown-menu {
         > .dropdown-header {
           border-color: @navbar-inverse-border;
+        }
+        .divider {
+          background-color: @navbar-inverse-border;
         }
         > li > a {
           color: @navbar-inverse-link-color;

@@ -1,0 +1,85 @@
+.thumbnail.tile
+{
+    display:block;
+    cursor: pointer;
+    -webkit-perspective: 0;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 0.2s;
+	float: left;
+	width: @tileWidth;
+	height: @tileWidth;
+	text-align:center;
+	/* padding: 5px; */
+	opacity:0.75;
+	background-color: @blue;
+
+	h1, h2, h3, h4, h5, h6 { 
+		color: @white;
+		-webkit-user-select: none;
+	}
+	h2 { font-size: 1.75em; margin-top: -20px; margin-left:0px; }
+	h3, h4 { margin-top: -15px; }
+	
+	h1.tile-text, h2.tile-text, h3.tile-text, h4.tile-text { margin-top: @tileWidth/3; }
+
+	a:hover { text-decoration: none; }
+	border :0;
+}
+
+.thumbnail.tile img  
+{
+    border :0;
+}
+.thumbnail.tile:hover 
+{ 
+    opacity:1;
+}
+
+.thumbnail.tile.tile-double 
+{
+	width: @tileWidth * 2 ;
+}
+
+
+.thumbnail.tile.tile-blue
+{
+    background-color: @blue;
+}
+.thumbnail.tile.tile-green
+{
+    background-color: @green;
+}
+.thumbnail.tile.tile-red
+{
+    background-color: @red;
+}
+.thumbnail.tile.tile-yellow
+{
+    background-color: @yellow;
+}
+.thumbnail.tile.tile-orange
+{
+    background-color: @orange;
+}
+.thumbnail.tile.tile-pink
+{
+    background-color: @pink;
+}
+.thumbnail.tile.tile-purple
+{
+    background-color: @purple;
+}
+.thumbnail.tile.tile-lime
+{
+    background-color: @lime;
+}
+.thumbnail.tile.tile-magenta
+{
+    background-color: @magenta;
+}
+.thumbnail.tile.tile-teal
+{
+    background-color: @teal;
+}
+
+
