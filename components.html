@@ -199,6 +199,7 @@
 &lt;/div&gt;
 
 </code></pre></div>
+<<<<<<< HEAD
 
 <!-- Tile Colors -->
 <h3 id="thumbnails-default">Colors</h3>
@@ -438,10 +439,60 @@
         </div>
     </div><!-- /.bs-example -->
 </div>
+=======
+>>>>>>> f8b1521546ecdaebe8670e153a3e2caeaba5fe20
 
+	<h3 id="fontawesome-tiles">Using Font Awesome in tiles</h3>
+	<p>You could use images in your tiles or use the conveniently included FontAwesome icons. Include the Font Awesome css file</p>
 
-		
+	<div class="highlight"><pre><code class="html">
+&lt;link href=&quot;docs/font-awesome.css&quot; rel=&quot;stylesheet&quot;&gt;
+	</code></pre>
 
+	<p>Now include the icon of you choice (Link to <a href="http://fontawesome.io/cheatsheet/" title="Font Awesome Icons" target="_blank">Cheatsheet</a>) as a <code>&lt;i&gt;&lt;/i&gt;</i></code>. Add <code>class="fa-links"</code> to your links to have the icons appear white</p>
+	
+	
+	</div><!-- /.highlight -->
+	
+	<div class="bs-example">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+		<div class="thumbnail tile tile-green">
+          <a href="#" class="fa-links">
+            <h1>Home</h1>
+			<i class="fa fa-3x fa-home"></i>
+			</a>
+		  </div>
+        </div>
+		<div class="col-sm-6 col-md-3">
+		<div class="thumbnail tile tile-orange">
+          <a href="#" class="fa-links">
+            <h1>RSS</h1>
+			<i class="fa fa-3x fa-rss-square"></i>
+			</a>
+		  </div>
+        </div>
+	  </div> <!-- /.row -->
+	</div>
+
+	<div class="highlight"><pre><code class="html">
+&lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;
+	&lt;div class=&quot;thumbnail tile tile-green&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;fa-links&quot;&gt;
+            &lt;h1&gt;Home&lt;/h1&gt;
+                &lt;i class=&quot;fa fa-3x fa-home&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;
+	&lt;div class=&quot;thumbnail tile tile-orange&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;fa-links&quot;&gt;
+            &lt;h1&gt;RSS&lt;/h1&gt;
+                &lt;i class=&quot;fa fa-3x fa-rss-square&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+	</code></pre>
 
   <!-- Dropdowns
   ================================================== -->
