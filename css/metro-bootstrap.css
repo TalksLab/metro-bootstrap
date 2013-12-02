@@ -6025,7 +6025,7 @@ td.visible-print {
   background-color: #ffc40d;
 }
 .thumbnail.tile.tile-orange {
-  background-color: #f09609;
+  background-color: #f39c12;
 }
 .thumbnail.tile.tile-pink {
   background-color: #e671b8;
@@ -6041,6 +6041,63 @@ td.visible-print {
 }
 .thumbnail.tile.tile-teal {
   background-color: #00aba9;
+}
+.thumbnail.tile.tile-turquoise {
+  background-color: #1abc9c;
+}
+.thumbnail.tile.tile-green-sea {
+  background-color: #16a085;
+}
+.thumbnail.tile.tile-emerald {
+  background-color: #2ecc71;
+}
+.thumbnail.tile.tile-nephritis {
+  background-color: #27ae60;
+}
+.thumbnail.tile.tile-peter-river {
+  background-color: #3498db;
+}
+.thumbnail.tile.tile-belize-hole {
+  background-color: #2980b9;
+}
+.thumbnail.tile.tile-amethyst {
+  background-color: #9b59b6;
+}
+.thumbnail.tile.tile-wisteria {
+  background-color: #8e44ad;
+}
+.thumbnail.tile.tile-wet-asphalt {
+  background-color: #34495e;
+}
+.thumbnail.tile.tile-midnight-blue {
+  background-color: #2c3e50;
+}
+.thumbnail.tile.tile-sun-flower {
+  background-color: #f1c40f;
+}
+.thumbnail.tile.tile-carrot {
+  background-color: #e67e22;
+}
+.thumbnail.tile.tile-pumpkin {
+  background-color: #d35400;
+}
+.thumbnail.tile.tile-alizarin {
+  background-color: #e74c3c;
+}
+.thumbnail.tile.tile-pomegranate {
+  background-color: #c0392b;
+}
+.thumbnail.tile.tile-clouds {
+  background-color: #ecf0f1;
+}
+.thumbnail.tile.tile-silver {
+  background-color: #bdc3c7;
+}
+.thumbnail.tile.tile-concrete {
+  background-color: #95a5a6;
+}
+.thumbnail.tile.tile-asbestos {
+  background-color: #7f8c8d;
 }
 .alert {
   border: 0px;
