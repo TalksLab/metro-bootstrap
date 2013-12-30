@@ -1,0 +1,19 @@
+{
+  "name": "metro-bootstrap",
+  "main": [
+    "./css/metro-bootstrap.css",
+    "./fonts/FontAwesome.otf",
+    "./fonts/fontawesome-webfont.eot",
+    "./fonts/fontawesome-webfont.svg",
+    "./fonts/fontawesome-webfont.ttf",
+    "./fonts/fontawesome-webfont.woff",
+    "./fonts/glyphicons-halflings-regular.eot",
+    "./fonts/glyphicons-halflings-regular.svg",
+    "./fonts/glyphicons-halflings-regular.ttf",
+    "./fonts/glyphicons-halflings-regular.woff"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
+
