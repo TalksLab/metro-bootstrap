@@ -1,0 +1,32 @@
+{
+  "name": "metro-bootstrap",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-connect": "0.5.0",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-htmlmin": "0.1.3",
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-imagemin": "0.1.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-rev": "~0.1.0",
+    "grunt-usemin": "~0.1.12",
+    "grunt-mocha": "~0.4.0",
+    "grunt-svgmin": "0.2.0",
+    "grunt-concurrent": "~0.3.0",
+    "load-grunt-tasks": "~0.2.0",
+    "matchdep": "~0.1.2",
+    "time-grunt": "~0.1.1",
+    "jshint-stylish": "~0.1.3"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
