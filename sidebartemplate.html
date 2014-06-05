@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>metro-bootstrap: Twitter Bootstrap with Metro style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="dist/css/metro-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+	<style>
+	
+	#wrapper {
+		padding-left: 250px;
+	}
+	
+	#wrapper-container {
+		width: 100%;
+	}
+	
+	#wrapper-container .container {
+		margin-left: inherit;
+	}
+	
+	#wrapper.wrapper-full {
+		padding-left: 110px;
+	}
+	
+	
+	
+	</style>
+  </head>  
+  <body >
+  
+   
+  <div id="wrapper">
+  
+  <div class="navbar navbar-side navbar-inverse navbar-fixed-top" role="navigation">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><i class="fa fa-1x fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about"><i class="fa fa-1x fa-user"></i> <span>About</span></a></li>
+            <li><a href="#contact"><i class="fa fa-1x fa-envelope"></i> <span>Contact</span></a></a></li>
+          </ul>
+        </div>
+		<div class="navbar-side-options">
+			<a href="#" id="collapse-sidebar"><i class="fa fa-2x fa-bars"></i></a>
+		</div>
+	
+		
+    </div>
+	<div id="wrapper-container">
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+
+    </div><!-- /.container -->
+	</div>
+	</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/metro-docs.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36060270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+  
+  $('#collapse-sidebar').click(function()
+  {
+	
+	$('.navbar-side').toggleClass('navbar-side-closed');
+	$('#wrapper').toggleClass('wrapper-full');
+	
+	
+  });
+
+</script>
+
+  </body>
+</html>
