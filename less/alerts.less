@@ -7,7 +7,13 @@
 // -------------------------
 
 .alert {
-  border: 0px;
+    border: none;
+    color: white;
+    .alert-link {
+        color: white;
+        font-weight: bold;
+        font-variant: small-caps;
+    }
 }
 
 
@@ -16,14 +22,14 @@
 // Generate contextual modifier classes for colorizing the alert.
 
 .alert-success {
-  border: 0px;
+    background-color: @btn-success-bg;
 }
 .alert-info {
-  border: 0px;
+    background-color: @btn-primary-bg;
 }
 .alert-warning {
-  border: 0px;
+    background-color: @btn-warning-bg;
 }
 .alert-danger {
-  border: 0px;
+    background-color: @btn-danger-bg;
 }
