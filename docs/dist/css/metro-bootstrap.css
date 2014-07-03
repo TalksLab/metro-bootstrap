@@ -5794,6 +5794,7 @@ button.close {
   background-color: #2e8bcc;
   z-index: 1;
   border: 4px #ffffff solid;
+  color: #ffffff;
 }
 .tile h1,
 .tile h2,
@@ -5827,6 +5828,26 @@ button.close {
 }
 .tile:hover {
   opacity: 1;
+}
+.tile .tile-label {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.tile .tile-content .tile-icon-large {
+  margin-left: 0px;
+  vertical-align: middle !important;
+  text-align: center;
+}
+.tile .tile-content {
+  padding-top: 20px;
+  line-height: normal;
+  position: relative;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .tile.tile-blue {
   background-color: #2e8bcc;
@@ -5906,6 +5927,17 @@ button.close {
 .tile.tile-clouds {
   background-color: #ecf0f1;
 }
+.tile.tile-clouds h1,
+.tile.tile-clouds h2,
+.tile.tile-clouds h3,
+.tile.tile-clouds h4,
+.tile.tile-clouds h5,
+.tile.tile-clouds h6 {
+  color: #34495e;
+}
+.tile.tile-clouds .tile-label {
+  color: #34495e;
+}
 .tile.tile-silver {
   background-color: #bdc3c7;
 }
@@ -5933,26 +5965,6 @@ a.fa-links {
 a.fa-links:hover,
 a.fa-links:focus {
   color: #ffffff;
-}
-.tile .tile-label {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  font-size: 14px;
-  color: #fff;
-}
-.tile .tile-content .tile-icon-large {
-  margin-left: 0px;
-  vertical-align: middle !important;
-  text-align: center;
-}
-.tile .tile-content {
-  padding-top: 20px;
-  line-height: normal;
-  position: relative;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .tile.tile-small {
   height: 70px;

@@ -10,13 +10,13 @@
     min-height: 75px;
 	text-align:center;
 	opacity:0.75;
-	background-color: @blue;
+	background-color: @tile-bg;
     z-index: 1;
-    border: @tile-border @tile-bg solid;
-
+    border: @tile-border @tile-border-bg solid;
+    color: @tile-text-color;
 
 	h1, h2, h3, h4, h5, h6 { 
-		color: @white;
+		color: @tile-text-color;
 		-webkit-user-select: none;
 	}
 	h2 { font-size: 1.75em; margin-top: -20px; margin-left:0px; }
@@ -36,6 +36,31 @@
 { 
     opacity:1;
 }
+
+.tile .tile-label {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 14px;
+    color: @tile-text-color;
+}
+
+.tile .tile-content .tile-icon-large {
+    margin-left: 0px;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.tile .tile-content
+{
+    padding-top: 20px;
+    line-height: normal;
+    position: relative;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 .tile.tile-blue
 {
@@ -140,7 +165,16 @@
 .tile.tile-clouds		
 {
     background-color: @clouds;
+    
+    h1, h2, h3, h4, h5, h6 { 
+        color: @wet-asphalt;
+    }
 }
+
+.tile.tile-clouds .tile-label {
+    color: @wet-asphalt;
+}
+
 .tile.tile-silver		
 {
     background-color: @silver;
@@ -149,7 +183,7 @@
 {
     background-color: @concrete;
 }
-.tile.tile-asbestos		
+.tile.tile-asbestos	
 {
     background-color: @asbestos;
 }
@@ -182,31 +216,6 @@ color:#ffffff;
 }
 
 
-
-.tile .tile-label {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    font-size: 14px;
-    color: #fff;
-}
-
-
-.tile .tile-content .tile-icon-large {
-    margin-left: 0px;
-    vertical-align: middle !important;
-    text-align: center;
-}
-
-.tile .tile-content
-{
-    padding-top: 20px;
-    line-height: normal;
-    position: relative;
-    width: 100%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 .tile.tile-small
 {
