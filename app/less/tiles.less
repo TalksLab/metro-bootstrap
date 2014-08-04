@@ -19,10 +19,27 @@
 		color: @tile-text-color;
 		-webkit-user-select: none;
 	}
-	h2 { font-size: 1.75em; margin-top: -20px; margin-left:0px; }
+	h2 { margin-top: -20px; margin-left:0px; }
 	h3, h4 { margin-top: -15px; }
 	
 	h1.tile-text, h2.tile-text, h3.tile-text, h4.tile-text { margin-top: 20px; }
+
+    h1
+    {
+        font-size: @tile-font-size-h1;
+    }
+    h2
+    {
+        font-size: @tile-font-size-h2;
+    }
+    h3
+    {
+        font-size: @tile-font-size-h3;
+    }
+    h4
+    {
+        font-size: @tile-font-size-h4;
+    }
 
 	a:hover { text-decoration: none; }
 	
@@ -165,14 +182,14 @@
 .tile.tile-clouds		
 {
     background-color: @clouds;
-    
+    color: @tile-light-text-color;
     h1, h2, h3, h4, h5, h6 { 
-        color: @wet-asphalt;
+        color: @tile-light-text-color;
     }
 }
 
 .tile.tile-clouds .tile-label {
-    color: @wet-asphalt;
+    color: @tile-light-text-color;
 }
 
 .tile.tile-silver		
