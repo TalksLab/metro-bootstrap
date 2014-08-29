@@ -191,6 +191,19 @@ module.exports = function (grunt) {
       }
     },
     copy: {
+      bootstrapless:
+      {
+        files: [{
+          expand: true,
+          dot: true,
+          
+          cwd: '<%= yeoman.app %>/bower_components/bootstrap/less',
+          dest: '<%= yeoman.app %>/bootstrap',
+          src: [
+            '**/*'
+          ]
+        }]
+      },
       dist: {
         files: [{
           expand: true,
@@ -276,6 +289,34 @@ module.exports = function (grunt) {
     ]);
   });
 
+  grunt.registerTask('nuget', 'Create a nuget package', function() {
+    var done = this.async();
+    //invoke nuget.exe
+    grunt.util.spawn({
+        cmd: "nuget.exe",
+        args: [
+            
+            "pack",
+            "metro-bootstrap.nuspec",
+ 
+            //path where the package should be created
+            "-OutputDirectory",
+            "nuget",
+ 
+            //override the version using the version in package.json
+            "-Version",
+            grunt.config.get("pkg").version
+        ]
+    }, function (error, result) {
+        if (error) {
+            grunt.log.error(error);
+        } else {
+            grunt.log.write(result);
+        }
+        done();
+    });
+  });
+
   grunt.registerTask('server', function () {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run(['serve']);
@@ -283,6 +324,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'copy:bootstrapless',
     'copy:server',
     'useminPrepare',
     'concurrent',

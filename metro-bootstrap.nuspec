@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!--
+        ID used to identify the nuget package - 
+        e.g. ProxyApi -> https://www.nuget.org/packages/ProxyApi
+        -->
+        <id>metro-bootstrap</id>
+         
+        <!--
+        Package version - we are going to leave this blank for now
+        -->
+        <version>0.0.0</version>
+         
+        <!-- Author, Owner and Licensing details -->
+        <authors>TalksLab</authors>
+        <owners>TalksLab</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <copyright>Copyright 2014</copyright>
+         
+        <!-- General Information -->
+        <description>metro-bootstrap: Twitter Bootstrap with Metro style</description>
+        <releaseNotes>-</releaseNotes>
+        <tags>twitter bootstrap css metro responsive html5 talkslab</tags>
+         
+        <!-- 
+        Packages (incl. minimum version) on which this package
+        depends 
+        -->
+        <dependencies>
+          <dependency id="Twitter.Bootstrap.Less" version="3.2.0.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="app\less\*" target="content\Content\metro-bootstrap" />
+        <file src="dist\css\metro-bootstrap.css" target="content\Content" />
+        <file src="dist\css\metro-bootstrap.min.css" target="content\Content" />
+    </files>
+</package>

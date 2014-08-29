@@ -1,5 +1,5 @@
 /*!
- * metro-bootstrap v3.2.0.0
+ * metro-bootstrap v3.2.0.1
  *
  * from talkslab based on twitter bootstrap.
  */
@@ -6186,16 +6186,16 @@ button.close {
   margin-top: 20px;
 }
 .tile h1 {
-  font-size: 64px;
+  font-size: 36px;
 }
 .tile h2 {
-  font-size: 58px;
+  font-size: 30px;
 }
 .tile h3 {
-  font-size: 38px;
+  font-size: 24px;
 }
 .tile h4 {
-  font-size: 32px;
+  font-size: 18px;
 }
 .tile a:hover {
   text-decoration: none;

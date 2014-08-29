@@ -20,7 +20,10 @@ Thumbs.db
 .svn
 .CVS
 .idea
+.nupkg
 
 node_modules
 .tmp
 app/bower_components
+app/bootstrap
+nuget/*
