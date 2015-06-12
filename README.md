@@ -1,4 +1,4 @@
-metro-bootstrap
+﻿metro-bootstrap
 ===============
 
 Simple bootstrap from Twitter with Metro style.
@@ -39,7 +39,7 @@ In the repository you will find the following directories:
 
 We provide compiled CSS (`metro-bootstrap.css`) in the dist folder, as well as compiled and minified CSS (`metro-bootstrap.min.css`). 
 
-Instaling Dependencies
+Installing Dependencies
 ----
 
 We manage dependencies using Bower.
