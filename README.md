@@ -4,6 +4,12 @@
 Simple bootstrap from Twitter with Metro style.
 TalksLab production by [Guilherme Ferreira](http://twitter.com/gsferreira) (http://gsferreira.com), [Nelson Reis](http://twitter.com/nelsonreis) (http://nelsonreis.net/) and [Rui Neves](http://twitter.com/ruimlneves).
 
+Maintainers Wanted
+----
+
+Unfortunately, the former maintainers no longer have the time and/or resources to work on this project. This means that bugs will not be fixed and features will not be added unless someone else does so. 
+
+If you're interested in fixing up metro-bootstrap, please reply to this [GitHub issue (#65)](https://github.com/TalksLab/metro-bootstrap/issues/65).
 
 
 
