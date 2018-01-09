@@ -2,7 +2,11 @@ const path = require('path')
 const qunit = require('qunit')
 const BlinkDiff = require('blink-diff')
 
-const samples = []
+const samples = [
+  'alert',
+  'badge',
+  'breadcrumb'
+]
 
 qunit.module('metro-bootstrap')
 
