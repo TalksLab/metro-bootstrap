@@ -1,4 +1,4 @@
-# Numerous always-ignore extensions
+# Always-ignore extensions
 *.diff
 *.err
 *.orig
@@ -10,20 +10,23 @@
 *.vi
 *~
 
-# OS folders
+# OS junk
 .DS_Store
 ._*
 Thumbs.db
 
-# Folders to ignore
-.hg
-.svn
-.CVS
-.idea
-.nupkg
+# Application directories
+.idea/
 
-node_modules
-.tmp
-app/bower_components
-app/bootstrap
-nuget/*
+# Package management directories
+node_modules/
+
+# Package management files
+package-lock.json
+
+# Build artifacts
+.tmp/
+.gobble/
+.gobble-build/
+dist/
+
