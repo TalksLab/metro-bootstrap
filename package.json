@@ -26,6 +26,7 @@
   },
   "scripts": {
     "serve": "gobble --env=dev serve",
+    "generate": "gobble --env=generate --force build .tmp",
     "test": "gobble --env=test --force build .tmp && qunit .tmp/index.js",
     "build": "gobble --env=build --force build dist"
   }

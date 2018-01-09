@@ -14,10 +14,15 @@ module.exports = ({
     const components = test.include('*.html').transform(wrapHTML)
     return gobble([lib, components])
   },
+  generate () {
+    const lib = prefix(compile(src))
+    const components = test.include('*.html').transform(wrapHTML)
+    return gobble([components, lib]).transform(screenshot, { extension: '.expected.png' })
+  },
   test () {
     const lib = prefix(compile(src))
     const components = test.include('*.html').transform(wrapHTML)
-    const actualShots = gobble([components, lib]).transform(screenshot)
+    const actualShots = gobble([components, lib]).transform(screenshot, { extension: '.actual.png' })
     const expectedShots = test.include('*.png')
     const specs = test.include('*.js')
     return gobble([actualShots, expectedShots, specs])
@@ -77,7 +82,7 @@ async function screenshot (inDir, outDir, options) {
   const components = listSync(inDir).filter(p => extname(p) === '.html')
   const shots = components.map(async p => {
     const page = await browser.newPage()
-    const path = join(outDir, `${basename(p)}.actual.png`)
+    const path = join(outDir, `${basename(p)}${options.extension}`)
     const fullPage = true
 
     await page.setViewport({ width: 1366, height: 768 })
