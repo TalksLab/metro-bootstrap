@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "main": "dist/metro-bootstrap.min.css",
   "files": [
+    "src",
     "dist"
   ],
   "devDependencies": {
