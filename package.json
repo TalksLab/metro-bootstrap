@@ -23,5 +23,9 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-livereload": "^4.0.2",
+    "gulp-plumber": "^1.2.1"
   }
 }
