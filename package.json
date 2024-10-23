@@ -1,6 +1,15 @@
 {
   "name": "metro-bootstrap",
   "version": "3.2.1",
+  "main": "./dist/css/metro-bootstrap.css",
+  "keywords": ["Bootstrap", "UI", "Metro"],
+  "author": "TalksLab",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TalksLab/metro-bootstrap"
+  },
+  "homepage": "http://talkslab.github.io/metro-bootstrap",
   "devDependencies": {
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
