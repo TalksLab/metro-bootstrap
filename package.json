@@ -22,10 +22,9 @@
     "gulp-svgmin": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
-    "jshint-stylish": "^2.2.1"
-  },
-  "dependencies": {
+    "jshint-stylish": "^2.2.1",
     "gulp-livereload": "^4.0.2",
     "gulp-plumber": "^1.2.1"
-  }
+  },
+  "dependencies": {}
 }
