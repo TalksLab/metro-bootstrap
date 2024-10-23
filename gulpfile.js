@@ -4,12 +4,16 @@ const path = require('path');
 const clean = require('gulp-clean');
 const cssmin = require('gulp-cssnano');
 const plumber = require('gulp-plumber');
+const rename = require('gulp-rename');
+const sourcemaps = require('gulp-sourcemaps'); // Import sourcemaps
 
 // Define paths
 const paths = {
   less: 'app/less/**/*.less', // Source LESS files
   dist: 'dist/css/',          // Destination folder for compiled CSS
   variables: 'app/less/variables.less', // Variables file
+  fonts: 'app/fonts/**/*',    // Path to the original font files
+  fontsDist: 'dist/fonts/',   // Destination for moved font files
 };
 
 // Task to compile LESS files
@@ -21,12 +25,31 @@ gulp.task('less', function () {
         this.emit('end');
       }
     }))
+    .pipe(sourcemaps.init()) // Initialize sourcemaps
     .pipe(less({
       paths: [path.join(__dirname, 'app/less')],
-      // Import the variables.less file in the main LESS file
+      // Make sure to import variables.less in your main LESS file
     }))
-    .pipe(cssmin())
-    .pipe(gulp.dest(paths.dist));
+    .pipe(rename('metro-bootstrap.css')) // Rename to metro-bootstrap.css
+    .pipe(gulp.dest(paths.dist)) // Output the non-minified CSS
+
+    .pipe(cssmin()) // Minify CSS
+    .pipe(rename('metro-bootstrap.min.css')) // Rename to metro-bootstrap.min.css
+    .pipe(gulp.dest(paths.dist)) // Output the minified CSS
+
+    // Write sourcemaps after minification
+    .pipe(sourcemaps.write('.', {
+      mapFile: function() {
+        return 'metro-bootstrap.css.map'; // Rename the sourcemap file
+      }
+    }))
+    .pipe(gulp.dest(paths.dist)); // Output the source map
+});
+
+// Task to copy font files
+gulp.task('fonts', function () {
+  return gulp.src(paths.fonts) // Source font files
+    .pipe(gulp.dest(paths.fontsDist)); // Destination for font files
 });
 
 // Task to clean the dist folder
@@ -35,5 +58,5 @@ gulp.task('clean', function () {
     .pipe(clean());
 });
 
-// Default task to clean and compile LESS
-gulp.task('default', gulp.series('clean', 'less'));
+// Default task to clean, compile LESS, and copy fonts
+gulp.task('default', gulp.series('clean', 'less', 'fonts'));
