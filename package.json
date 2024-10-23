@@ -19,6 +19,7 @@
     "gulp-load-plugins": "^2.0.7",
     "gulp-mocha": "^8.0.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
     "gulp-rev": "^9.0.0",
     "gulp-rev-replace": "^0.4.3",
     "gulp-sourcemaps": "^3.0.0",
