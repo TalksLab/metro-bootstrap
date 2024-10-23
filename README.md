@@ -39,24 +39,34 @@ We provide compiled CSS (`metro-bootstrap.css`) in the dist folder, as well as c
 
 ## Installing Dependencies
 
-We manage dependencies using Bower.
-Run `bower install` to download the required dependencies.
+We manage dependencies using npm. 
 
-If don't have Grunt installed, execute the following steps from the command line:
+1. Make sure you have Node.js installed.
+2. Go to the `metro-bootstrap` directory, then run:
 
-1. Make sure you have node.js installed.
-2. Install bower with `npm install -g bower`.
+   ```bash
+   npm install
+   ```
+
+This will install the necessary dependencies as specified in the `package.json` file.
 
 ## Compiling CSS
 
-We compile metro-bootstrap using [Grunt](http://gruntjs.com/).
-Run `grunt build` to compile the CSS into `/dist`.
+We compile `metro-bootstrap` using Gulp. To do so, follow these steps:
 
-If don't have Grunt installed, execute the following steps from the command line:
+1. If you don't have Gulp installed globally, you can install it by running:
 
-1. Make sure you have node.js installed.
-2. Install `grunt-cli` globally with `npm install -g grunt-cli`.
-3. Go to the `metro-bootstrap` directory, then run `npm install`. npm will look at package.json and automatically install the necessary dependencies.
+   ```bash
+   npm install -g gulp-cli
+   ```
+
+2. To compile the CSS into the `dist` folder, run:
+
+   ```bash
+   gulp
+   ```
+
+This command will clean the `dist` directory, compile the LESS files, and copy the fonts.
 
 ## License
 
