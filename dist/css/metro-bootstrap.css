@@ -6252,6 +6252,7 @@ button.close {
   z-index: 1;
   border: 4px #FFFFFF solid;
   color: #FFFFFF;
+  position: relative;
 }
 .tile h1,
 .tile h2,
@@ -6290,6 +6291,18 @@ button.close {
 }
 .tile a:hover {
   text-decoration: none;
+}
+.tile .text-left {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: #D3D3D3;
+}
+.tile .text-right {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #D3D3D3;
 }
 .tile img {
   border: 0;
