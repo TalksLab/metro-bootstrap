@@ -6468,6 +6468,16 @@ a.fa-links:focus {
   height: 310px;
   width: 310px;
 }
+.tile.tile-full {
+  width: 100%;
+  height: 100%;
+}
+.tile.tile-h-full {
+  height: 100%;
+}
+.tile.tile-w-full {
+  width: 100%;
+}
 .alert {
   border: none;
   color: white;
