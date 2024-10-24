@@ -6676,3 +6676,44 @@ a.fa-links:focus {
     display: none;
   }
 }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+.switch .switch-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .switch-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+.switch .switch-label .switch-inner {
+  display: none;
+}
+.switch .switch-label .switch-slider {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.switch .switch-checkbox:checked + .switch-label {
+  background-color: #00a2ed;
+}
+.switch .switch-checkbox:checked + .switch-label .switch-slider {
+  transform: translateX(30px);
+}
