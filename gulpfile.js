@@ -8,12 +8,12 @@ const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps'); // Import sourcemaps
 
 // Define paths
+// Define paths
 const paths = {
-  less: 'app/less/**/*.less', // Source LESS files
-  dist: 'dist/css/',          // Destination folder for compiled CSS
-  variables: 'app/less/variables.less', // Variables file
-  fonts: 'app/fonts/**/*',    // Path to the original font files
-  fontsDist: 'dist/fonts/',   // Destination for moved font files
+  less: 'app/less/metro-bootstrap.less', // Main LESS file
+  dist: 'dist/css/',                     // Destination folder for compiled CSS
+  fonts: 'app/fonts/**/*',               // Path to the original font files
+  fontsDist: 'dist/fonts/',              // Destination for moved font files
 };
 
 // Task to compile LESS files
@@ -27,8 +27,7 @@ gulp.task('less', function () {
     }))
     .pipe(sourcemaps.init()) // Initialize sourcemaps
     .pipe(less({
-      paths: [path.join(__dirname, 'app/less')],
-      // Make sure to import variables.less in your main LESS file
+      paths: [path.join(__dirname, 'app/less')]
     }))
     .pipe(rename('metro-bootstrap.css')) // Rename to metro-bootstrap.css
     .pipe(gulp.dest(paths.dist)) // Output the non-minified CSS
@@ -39,7 +38,7 @@ gulp.task('less', function () {
 
     // Write sourcemaps after minification
     .pipe(sourcemaps.write('.', {
-      mapFile: function() {
+      mapFile: function () {
         return 'metro-bootstrap.css.map'; // Rename the sourcemap file
       }
     }))
