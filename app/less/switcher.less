@@ -1,0 +1,49 @@
+@import "variables.less";
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+
+  .switch-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .switch-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: @secondary-color;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+
+    .switch-inner {
+      display: none;
+    }
+
+    .switch-slider {
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      top: 2px;
+      left: 2px;
+      border-radius: 50%;
+      background-color: @accent-color;
+      transition: all 0.3s;
+    }
+  }
+
+  .switch-checkbox:checked + .switch-label {
+    background-color: @primary-color;
+
+    .switch-slider {
+      transform: translateX(30px);
+    }
+  }
+}
