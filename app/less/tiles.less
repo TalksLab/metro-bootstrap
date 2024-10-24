@@ -15,6 +15,7 @@
     z-index: 1;
     border: @tile-border @tile-border-bg solid;
     color: @tile-text-color;
+    position: relative;
 
 	h1, h2, h3, h4, h5, h6 { 
 		color: @tile-text-color;
@@ -43,6 +44,18 @@
     }
 
 	a:hover { text-decoration: none; }
+    .text-left{
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        color:@gray-light
+    }
+    .text-right{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color:@gray-light
+    }
 	
 }
 
@@ -257,4 +270,14 @@ color:#ffffff;
 {
     height: 310px;
     width: 310px;
+}
+.tile.tile-full{
+    width: 100%;
+    height:100%
+}
+.tile.tile-h-full{
+    height: 100%;
+}
+.tile.tile-w-full{
+    width: 100%;
 }
