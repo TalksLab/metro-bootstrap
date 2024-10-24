@@ -1,6 +1,6 @@
 {
   "name": "metro-bootstrap",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "main": "./dist/css/metro-bootstrap.css",
   "keywords": ["Bootstrap", "UI", "Metro"],
   "author": "TalksLab",
