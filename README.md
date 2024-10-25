@@ -33,6 +33,34 @@ In the repository you will find the following directories:
 
 We provide compiled CSS (`metro-bootstrap.css`) in the dist folder, as well as compiled and minified CSS (`metro-bootstrap.min.css`).
 
+## Installation
+
+You can install and use `metro-bootstrap` in your project using either a **Git clone** or a **CDN**.
+
+### 1. Using Git Clone
+
+To clone the repository and include `metro-bootstrap`:
+
+```bash
+git clone https://github.com/TalksLab/metro-bootstrap.git
+```
+
+After cloning, you can directly link the CSS files located in the `dist/css/` directory in your HTML:
+
+```html
+<link rel="stylesheet" href="path/to/metro-bootstrap/dist/css/metro-bootstrap.min.css">
+```
+
+### 2. Using a CDN
+
+You can include the `metro-bootstrap` CSS directly from a CDN for ease of use. Add the following line in your HTML `<head>`:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TalksLab/metro-bootstrap@master/dist/css/metro-bootstrap.min.css">
+```
+
+This will pull the latest compiled and minified CSS directly from the repository.
+
 ## Installing Dependencies
 
 We manage dependencies using npm. 
