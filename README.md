@@ -32,8 +32,6 @@ In the repository you will find the following directories:
     └── css/
         ├── metro-bootstrap.css
         └── metro-bootstrap.min.css
-    docs/
-    └── (metro-bootstrap GitHub Pages)
 
 We provide compiled CSS (`metro-bootstrap.css`) in the dist folder, as well as compiled and minified CSS (`metro-bootstrap.min.css`).
 
