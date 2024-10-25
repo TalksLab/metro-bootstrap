@@ -2,9 +2,7 @@
 
 Simple bootstrap from Twitter with Metro style.
 
-## ⚠ This project is not being maintained
 
-This project is not being maintained. For more information, please read the [Maintainers Wanted section](#maintainers-wanted) below.
 
 ## Maintainers Wanted
 
