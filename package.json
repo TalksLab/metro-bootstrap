@@ -2,7 +2,15 @@
   "name": "@talkslab/metro-bootstrap",
   "version": "3.3.1",
   "main": "./dist/css/metro-bootstrap.css",
-  "keywords": ["Bootstrap", "UI", "Metro"],
+  "keywords": [
+    "Bootstrap",
+    "UI",
+    "Metro"
+  ],
+  "scripts": {
+    "prettier:check": "prettier . --check",
+    "prettier:write": "prettier . --write"
+  },
   "author": "TalksLab",
   "license": "Apache-2.0",
   "publishConfig": {
@@ -40,7 +48,8 @@
     "gulp-uglify": "^3.0.2",
     "gulp-usemin": "^0.3.30",
     "gulp-watch": "^5.0.1",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "prettier": "3.3.3"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",

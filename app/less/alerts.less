@@ -3,34 +3,32 @@
 // Alerts
 // --------------------------------------------------
 
-
 // Base styles
 // -------------------------
 
 .alert {
-    border: none;
+  border: none;
+  color: white;
+  .alert-link {
     color: white;
-    .alert-link {
-        color: white;
-        font-weight: bold;
-        font-variant: small-caps;
-    }
+    font-weight: bold;
+    font-variant: small-caps;
+  }
 }
-
 
 // Alternate styles
 //
 // Generate contextual modifier classes for colorizing the alert.
 
 .alert-success {
-    background-color: @btn-success-bg;
+  background-color: @btn-success-bg;
 }
 .alert-info {
-    background-color: @btn-primary-bg;
+  background-color: @btn-primary-bg;
 }
 .alert-warning {
-    background-color: @btn-warning-bg;
+  background-color: @btn-warning-bg;
 }
 .alert-danger {
-    background-color: @btn-danger-bg;
+  background-color: @btn-danger-bg;
 }
