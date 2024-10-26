@@ -6,9 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="/styles/docs.css">
+  <link rel="stylesheet" href="styles/docs.css">
+  <link rel="stylesheet" href="metro-bootstrap/dist/css/metro-bootstrap.min.css">  
 </head>
 <body>
+  <style>
+    body{
+      background-color: var(--base-background-color)!important;
+      color:var(--base-color)!important;
+    }
+    blockquote{
+      border-left: 0;
+    }
+  </style>
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -19,6 +29,6 @@
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="/scripts/vendor/docsify.js"></script>
+  <script src="scripts/vendor/docsify.js"></script>
 </body>
 </html>
