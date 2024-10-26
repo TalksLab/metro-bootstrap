@@ -1,5 +1,5 @@
 {
-  "name": "metro-bootstrap",
+  "name": "@talkslab/metro-bootstrap",
   "version": "3.3.0",
   "main": "./dist/css/metro-bootstrap.css",
   "keywords": ["Bootstrap", "UI", "Metro"],
