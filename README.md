@@ -35,7 +35,13 @@ We provide compiled CSS (`metro-bootstrap.css`) in the dist folder, as well as c
 
 ## Installation
 
-You can install and use `metro-bootstrap` in your project using either a **Git clone** or a **CDN**.
+You can install and use `metro-bootstrap` in your project using npm:
+
+```bash
+npm install @talkslab/metro-bootstrap
+```
+
+### Alternatively, you can also use either a **Git clone** or a **CDN**.
 
 ### 1. Using Git Clone
 
