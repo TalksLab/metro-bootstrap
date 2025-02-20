@@ -22,7 +22,7 @@
   },
   "homepage": "http://talkslab.github.io/metro-bootstrap",
   "devDependencies": {
-    "browser-sync": "^2.27.11",
+    "browser-sync": "^3.0.3",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
