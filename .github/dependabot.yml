@@ -9,3 +9,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    # Raise all npm pull requests with reviewers
+    reviewers:
+      - "TalksLab/metro-bootstrap-maintainers"
+    # Raise all npm pull requests with assignees
+    assignees:
+      - "Bashamega"
