@@ -52,7 +52,7 @@
     "prettier": "3.5.3"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "font-awesome": "^4.7.0"
   }
 }
