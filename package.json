@@ -49,7 +49,7 @@
     "gulp-usemin": "^0.3.30",
     "gulp-watch": "^5.0.1",
     "jshint-stylish": "^2.2.1",
-    "prettier": "3.7.4"
+    "prettier": "3.8.1"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
